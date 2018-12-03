@@ -1,0 +1,986 @@
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+*:focus,
+*:active,
+*:hover{
+	outline:none;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.login-page_container {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.login-section {
+    background-image: url(../img/noise.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    width: 50%;
+    background-color: #ffffff;
+    position: relative;
+    transition: .5s ease;
+}
+
+.login-section:hover {
+    width: 60%;
+}
+
+.login-section:before {
+    background-image: url(../img/noise.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0px;
+    z-index: 5;
+    right: 20px;
+    border-radius: 0%;
+    transition: .3s ease;
+}
+
+.login-section:hover:before {
+    width: 40px;
+    right: -20px;
+    border-radius: 40%;
+    z-index: 10;
+}
+
+.signup-section {
+    background-image: url(../img/noise.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    width: 50%;
+    background-color: #076186;
+    position: relative;
+    transition: .5s ease;
+}
+
+.signup-section:before {
+    background-image: url(../img/noise.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: #076186;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0px;
+    z-index: 5;
+    left: 20px;
+    border-radius: 0%;
+    transition: .3s ease;
+}
+
+.signup-section:hover:before {
+    width: 40px;
+    left: -20px;
+    border-radius: 40%;
+    z-index: 10;
+}
+
+.signup-section:hover {
+    width: 60%;
+}
+
+.section-page_intro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .5s ease .5s;
+    z-index: 12;
+    cursor: pointer;
+}
+
+.section-page-intro_title {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0 10px;
+    font-size: 17px;
+    color: white;
+}
+
+.login-section .section-page-intro_title {
+    color: #2b2e2f;
+}
+
+.page-side.section-open {
+    width: 100%;
+}
+
+.page-side.section-close {
+    width: 140px;
+}
+
+.page-side.section-close:hover {
+    width: 200px;
+}
+
+.page-side.section-open .section-page_intro {
+    margin-top: -15px;
+    opacity: 0;
+   visibility: hidden;
+}
+
+.page-side.section-open:hover:before {
+    width: 0px;
+    right: 0px;
+    border-radius: 40%;
+    z-index: 10;
+}
+
+/*** style of login side ***/
+
+.page-side .login-form-area {
+    width: 100%;
+    max-width: 555px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 11;
+    position: relative;
+}
+
+.form-title{
+    margin: 50px 0 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 46px;
+    white-space: nowrap;
+}
+
+.login-section .form-title{
+    color: #2b2e2f;
+}
+
+.login-page_label {
+    width: 100%;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.login-page_label .login-page_input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #2b2e2f;
+    outline: none;
+    padding: 9px;
+    color: #777777;
+    width: 100%;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-page_placeholder {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    color: #8a8a8a;
+    max-width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: .3s ease;
+    cursor: text;
+    font-weight: 600;
+    font-size: 16px; 
+}
+
+.login-page_input:focus + .login-page_placeholder {
+    max-width: 0px;
+}
+
+.login-page_input.hide-placeholder + .login-page_placeholder {
+    max-width: 0px;
+}
+
+.login-section_submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-section_submit ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.login-section_submit li {
+    float: left;
+}
+
+.login-section_submit li a {
+    padding: 5px;
+    color: #2b2e2f;
+    font-size: 20px;
+    transition: .3s ease;
+}
+
+.login-section_submit li a:hover {
+        opacity: .5;
+}
+
+
+.login-section_submit li a i{
+    text-align: left;
+}
+
+.login-section_submit .login-page-submit-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.login-section_submit .login-page-submit-btn button {
+    position: relative;
+    background-color: #2b2e2f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 80px;
+    border-radius: 20px;
+    font-size: 0;
+    background-image: url(../img/submit-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.login-section_submit .login-page-submit-btn button:hover,
+.login-section_submit .login-page-submit-btn button:focus {
+    background-position: 38px center;
+    background-color: #f44336;
+}
+.signup-page_forget a,
+.login-page_forget a {
+    color: #2b2e2f;
+    font-size: 14px;
+    display: block;
+    margin: 20px 0 20px;
+    font-weight: 600;
+}
+.signup-page_forget a{
+	color: white;
+}
+.forget-form .forget-title {
+    color: #2b2e2f;
+    font-size: 16px;
+    display: block;
+    margin: 0px 0 20px;
+    font-weight: 600;
+}
+
+.forget-form .login-section_submit {
+    justify-content: flex-end;
+}
+
+.login-form-area .forget-form {
+    display: none
+}
+
+
+/*** style of Sign Up side ***/
+
+.page-side .signup-form-area {
+    width: 100%;
+    max-width: 555px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 11;
+    position: relative;
+}
+
+.signup-section .form-title{
+    color: white;
+}
+
+.section-form {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.signup-section .login-page_label .login-page_input {
+    border-bottom: 1px solid #fafafa;
+    color: #f6f6f6;
+}
+
+.signup-section .login-page_placeholder {
+    color: #c5c5c5;
+}
+
+.signup-section .login-page_input:focus + .login-page_placeholder {
+    max-width: 0px;
+}
+
+.signup-section .login-page_input.hide-placeholder + .login-page_placeholder {
+    max-width: 0px;
+}
+
+.signup-section_submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-section_submit ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.signup-section_submit li {
+    float: left;
+}
+
+.signup-section_submit li a {
+    padding: 5px;
+    color: #fafafa;
+    font-size: 20px;
+    transition: .3s ease;
+}
+
+.signup-section_submit li a:hover {
+        opacity: .5;
+}
+
+.signup-section_submit li a i{
+    text-align: left;
+}
+
+.signup-section_submit .login-page-submit-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.signup-section_submit .login-page-submit-btn button {
+    position: relative;
+    background-color: #fafafa;
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 80px;
+    border-radius: 20px;
+    font-size: 0;
+    background-image: url(../images/submit-black.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.signup-section_submit .login-page-submit-btn button:hover {
+    background-position: 38px center;
+}
+
+/*** Animation view side form ***/
+
+.page-side .section-form {
+    visibility: hidden;
+    transition: 0s ease;
+    transform: translate(0, 30px);
+    opacity: 0;
+}
+
+.page-side.section-open .section-form {
+    transition: .5s ease 1.5s;
+    transform: translate(0px, 0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.form-title {
+    max-width: 0px;
+    overflow: hidden;
+    transition: 0s ease;
+}
+
+.page-side.section-open .form-title {
+    max-width: 100%;
+    overflow-x: hidden;
+    transition: 1s ease 1s;
+}
+@charset "UTF-8";
+
+@font-face {
+  font-family: "login";
+  src:url("fonts/login.eot");
+  src:url("fonts/login.eot?#iefix") format("embedded-opentype"),
+    url("fonts/login.woff") format("woff"),
+    url("fonts/login.ttf") format("truetype"),
+    url("fonts/login.svg#login") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "login" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="fl-"]:before,
+[class*=" fl-"]:before {
+  font-family: "login" !important;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fl-imac:before {
+  content: "\61";
+}
+.fl-facebook:before {
+  content: "\62";
+}
+.fl-user:before {
+  content: "\65";
+}
+.fl-user-md:before {
+  content: "\66";
+}
+.fl-whatsapp:before {
+  content: "\67";
+}
+.fl-users:before {
+  content: "\68";
+}
+.fl-arrow-right:before {
+  content: "\69";
+}
+.fl-arrow-left:before {
+  content: "\6a";
+}
+.fl-twitter:before {
+  content: "\64";
+}
+.fl-skype:before {
+  content: "\6b";
+}
+.fl-share-alt-square:before {
+  content: "\6c";
+}
+.fl-ios-keypad-outline:before {
+  content: "\6d";
+}
+.fl-ios-email-outline:before {
+  content: "\6e";
+}
+.fl-ios-contact-outline:before {
+  content: "\6f";
+}
+.fl-ios-gear-outline:before {
+  content: "\70";
+}
+.fl-ios-locked-outline:before {
+  content: "\71";
+}
+.fl-google-plus:before {
+  content: "\72";
+}
+/** media query **/
+
+@media (max-width:767px) {
+    .login-section:before {content: none;}
+    .signup-section:before {content: none;}
+    .page-side.section-close {width: 80px;}
+    .page-side.section-open {width: 100%;}
+    .page-side.section-close:hover {width: 80px;}
+    .section-page_intro img { width: 60px;}
+    .section-page-intro_title {font-size: 13px;}
+    .page-side .signup-form-area {padding: 20px;}
+    .page-side .login-form-area {padding: 20px;}
+    .form-title {font-size: 36px;margin: 30px 0 0;}
+    .login-page_placeholder {font-size: 13px;top: 12px;}
+    .login-page_label .login-page_input {font-size: 13px;}
+    .login-page_forget a {font-size: 13px;}
+    .forget-form .forget-title {font-size: 14px;}
+}
+
+.jconfirm.jconfirm-material .jconfirm-box{
+	padding:0px;
+}
+div.jconfirm-box{
+	width:50px;
+	height:50px;
+}
